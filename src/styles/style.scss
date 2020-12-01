@@ -1,5 +1,10 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/bootstrap-grid.scss";
+
+
 @import "variables";
 
 @import "main";
 @import "fonts";
+
+@import "bootstrap"

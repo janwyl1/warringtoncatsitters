@@ -1,7 +1,11 @@
 import React from "react"
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Layout from '../components/layout'
+// import { Button } from 'react-bootstrap';
 
 export default function Home() {
-  return <div><Button variant="primary">Primary</Button>gatHello world!</div>
+  return (
+    <Layout>
+      
+    </Layout>
+    )
 }

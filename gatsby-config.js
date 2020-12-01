@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-preact`, `gatsby-plugin-sass`,],
+  plugins: [
+    `gatsby-plugin-preact`,  
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ["src/styles/bootstrap"],
+      },
+    },
+  ],
 }

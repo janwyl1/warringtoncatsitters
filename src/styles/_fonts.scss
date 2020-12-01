@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Nunito:wght@600&display=swap");
+
+@font-face {
+    font-family: 'font-awesome';
+    src:  url('../fonts/font-awesome.eot?gaesh0');
+    src:  url('../fonts/font-awesome.eot?gaesh0#iefix') format('embedded-opentype'),
+      url('../fonts/font-awesome.ttf?gaesh0') format('truetype'),
+      url('../fonts/font-awesome.woff?gaesh0') format('woff'),
+      url('../fonts/font-awesome.svg?gaesh0#font-awesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "font-awesome" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .fa-bars:before {
+    content: "\f0c9";
+  }

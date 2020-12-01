@@ -1,0 +1,521 @@
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: black;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    text-shadow: 0 0 1px transparent;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 2.25em; // //36px
+    margin-bottom: .5rem; // 8px;
+}
+
+h2 {
+    font-size: 1.75em; //28px;
+    margin-bottom: 1rem; //16px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+
+p {
+    margin-bottom: 1em;
+    -webkit-text-size-adjust: none; // prevent browsers from resizing text in landscape view
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+.lead {
+    font-size: 1.125em;
+    margin-bottom: 20px;
+}
+
+
+a, a:visited {
+    color: $purple;
+}
+
+a:hover, a:active, a:focus {
+    color: $dark-purple;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em; // 48px
+    }
+
+    h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+    .lead {
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width: 992px) {
+    h1 {
+        font-size: 3.375em; //54px
+    }
+    p {
+        font-size: 1.125rem; // 18px
+    }
+}
+
+/* Helper Classes */
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+.v-spacer {
+    margin-bottom: 12.5em; // 200px;
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: flex-end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.img-cat-left {
+    margin-top: 4em;
+    max-height: 300px;
+}
+
+.img-mh {
+    max-height: 325px;
+}
+
+.center-img {
+    margin: 0 auto;
+}
+
+.center-img-sm {
+    margin: 0 auto;
+}
+
+.img-contact {
+    margin: 0 auto;
+}
+.img-rotate {
+    transform: rotate(12.5deg);
+}
+
+@media (min-width: 768px) {
+    .center-img-sm {
+        margin: unset;
+    }
+    .img-cat-left {
+        max-height: none;
+    }   
+}
+
+/* Navbar */
+header {
+    height: 80px;
+    background-color: $white;
+    padding: 10px 0;
+    margin-bottom: 80px;
+    border-bottom: 2px solid $nav-grey;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.logo-img {
+    height: 60px;
+    max-width: unset;
+}
+.menu-icon {
+    font-size: 2.4em;
+    color: $black;
+    line-height: 60px;
+}
+nav {
+    position: absolute;
+    background-color: $nav-grey;
+    top:80px;
+    left:0;
+    width: 100%;
+    z-index: 999;
+
+}
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0 15px;
+}
+nav ul li a, nav ul li a:visited {
+    display: inline-block;
+    padding: 12px;
+    color: $black;
+    text-decoration: none;
+    font-size: 0.875em;
+    font-weight: 400;
+    transition: color .15s ease-in-out;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: $purple;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+    header {
+        margin-bottom: 120px;
+    }
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 80px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+.hero-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+
+
+/* Price Section */
+.price-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price {
+    font-size: 5.25em; // 84px (84 / 16 = 5.25)
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.price-visit {
+    font-size: 1.75em; //28px
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: -10px;
+}
+
+.price-desc {
+    font-size: 1em; //16px
+    font-weight: 400;
+}
+
+.price-aside {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.125em;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .price {
+        font-size: 7em; //114px
+    }
+
+    .price-visit {
+        font-size: 2em;
+    }
+
+    .price-desc {
+        font-size: 1.125em; // 18px
+    }
+
+    .price-aside {
+        font-size: 1.375em;
+    }
+}
+
+.meet-greet {
+    padding: 2em;
+    border-radius: 25px;
+}
+
+/* Testimonials */
+.testimonials {
+    margin-bottom: 8.75em; //140px;
+    padding: 5em 0; // 80px 
+    text-align: center;
+}
+
+.testimonials-header {
+    margin-bottom: 1em;
+}
+
+.testimonials-quote {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.testimonials-author {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+.testimonials-author a {
+    color: $light-grey;
+}
+
+.testimonials-stars {
+    display: block;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 768px) {
+    .testimonials-quote {
+        font-size: 1.125em; // 18px;
+    }
+
+    .testimonials-stars {
+        font-size: 3em;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+}
+footer p {
+    font-size: 0.875em; // 14px
+    color: $black;
+    opacity: 0.8;
+}
+footer a, footer a:visited {
+   color: $black;
+   opacity: 0.8;
+}
+footer a:hover, footer a:focus {
+    opacity: 1;
+    color: $black;
+}
+
+.footer-small {
+    font-size: 0.8125em; // 13px;
+}
+.policies li {
+    display: inline-block;
+    margin-right: 1em;
+}
+.policies li a {
+    text-decoration: none;
+}
+
+/* Pet Sitting Page Styles */
+.animals-list {
+    font-size: 1.125em; // 18px;
+    list-style: disc;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+    .animals-list {
+        font-size: 1.5em; // 24px
+    }
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+
+.contact-img {
+    max-height: 400px;
+}
+
+.social-link {
+    color: $purple;
+    transition: color .15s ease-in-out;
+}
+
+.social-link:hover, .social-link:active, .social-link:focus {
+    color: $dark-purple;
+}
+
+
+/* Button Styles */
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: .75em 2em;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.hero-btn {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.btn-about-us {
+    max-width: 400px;
+    display: block;
+    margin-bottom: 1em;
+}
+.btn-email {
+    font-size: 0.875em;
+}
+
+.contact .btn {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 1em auto;
+    padding: 12px 6px;
+}
+@media (min-width: 768px) {
+    .contact .btn {
+        font-size: 1.125em;
+    }
+}
+
+.btn-grey, .btn-grey:visited {
+    background: $dark-grey;
+    border-color: $dark-grey;
+    color: $white;
+}
+
+.btn-grey:hover, .btn-grey:focus, .btn-grey:active {
+    background: $white;
+    border-color: $dark-grey;
+    color: $dark-grey;
+}
+
+.btn-purple, .btn-purple:visited {
+    background: $purple;
+    border-color: $purple;
+    color: $white;
+}
+
+.btn-purple:hover, .btn-purple:focus, .btn-purple:active {
+    background: $white;
+    border-color: $purple;
+    color: $purple;
+}
+
+.btn-dark-purple {
+    background: $dark-purple;
+    border-color: $dark-purple;
+}
+
+.btn-dark-purple:hover {
+    background: $white;
+    border-color: $dark-purple;
+    color: $dark-purple;
+}
+
+/* Backgrounds */
+.bg-black {
+    background: $black;
+    color: $light-grey;
+}
+
+.bg-black a:hover, .bg-black a:focus, .bg-black a:active {
+    color: $white;
+}
+
+.bg-grey {
+    background: $light-grey;
+}
+
+/* Slick slider overrides */
+.slick-dots li.slick-active button::before {
+    color: $pink;
+    opacity: 1;
+}
+
+.slick-dots li button::before {
+    font-size: 16px;
+    color: $white;
+    opacity: 0.5;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: $arrow-grey;
+}

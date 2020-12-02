@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Warrington Cat Sitters",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A brochure website built with gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -17,15 +17,19 @@
     "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
     "gatsby-plugin-preact": "^4.2.0",
+    "gatsby-plugin-prettier-eslint": "^1.0.4",
     "gatsby-plugin-sass": "^2.6.0",
     "node-sass": "^4.14.1",
     "preact": "^10.5.7",
     "preact-render-to-string": "^5.1.12",
     "react": "^16.12.0",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-slick": "^0.27.13"
   },
   "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5",
     "prettier": "2.1.2"
   },
   "repository": {

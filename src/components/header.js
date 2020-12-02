@@ -12,11 +12,12 @@ return (
             <img
                 alt=""
                 src={logo}
-                width={202}
-                height={60}
-                className="d-inline-block align-top"
+                height={70}
+                width={70}
+                className="d-inline-block"
+                id="logo"
             />{' '}
-            <span className="d-none">Warrington Cat Sitters</span>
+            <span>Warrington<b>Cat Sitters</b></span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarResponsive" />
             <Navbar.Collapse id="navbarResponsive" >

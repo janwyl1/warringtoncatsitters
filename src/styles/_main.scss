@@ -7,8 +7,11 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale; 
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -21,7 +24,6 @@ h6 {
     font-weight: 600;
     line-height: 1.2;
     text-shadow: 0 0 1px transparent;
-    text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -155,6 +157,12 @@ img {
 
 
 /* Navbar */
+
+a.navbar-brand {
+    font-family: $nunito;
+    font-weight: 600;
+    color: green;
+}
 .menu-wrap {
     display: flex;
     justify-content: space-between;
@@ -176,6 +184,33 @@ img {
         padding: 0 15px;
     }
 }
+/* Logo */
+#logo {
+	vertical-align: middle;
+}
+.navbar-brand span {
+	// font-size: 1.875rem;
+	font-size: 29px;
+    line-height: 1.2;
+    font-weight: 600;
+	display: inline-block;
+	vertical-align: middle;
+	padding:0 0 0 5px;
+}
+.navbar-brand b {
+	display: block;
+	// font-size: 1rem;
+	font-size: 17px;
+    line-height: 1;
+    font-weight: 400;
+    padding-left: 5px;
+    letter-spacing: 0.02em;
+    color: $purple;
+}
+.navbar-nav {
+	margin-left: auto;
+}
+
 
 
 // header {

@@ -2,7 +2,7 @@
 
 Brochure website for a local business
 
-Static prototype - site due to launch Jan 2021
+Due to launch Jan 2021
 
 <br><br><br>
 

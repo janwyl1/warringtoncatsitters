@@ -6,7 +6,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 export default function Header() {
 return (
-    <>
         <Navbar expand="md" variant="light" className="menu-wrap">
             <Navbar.Brand href="./">
             <img
@@ -34,6 +33,5 @@ return (
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-    </>
     )
 }

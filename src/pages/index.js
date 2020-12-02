@@ -5,6 +5,7 @@ import HeroTarget from "../components/heroTarget"
 import RightAlignedSection from "../components/rightAlignedSection"
 import PriceSection from "../components/prices"
 import Testimonials from "../components/testimonials"
+import Contact from "../components/contact"
 
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -12,6 +13,8 @@ import gingerCat from "../images/ginger_cat_resting.jpg"
 import smilingCat from "../images/smiling_cat.jpg"
 import greyCatMoustache from "../images/grey-cat-moustache.jpg"
 import catLookingLeft from "../images/look-left-cat.jpg"
+import catWithHeart from "../images/cat-with-heart-toy.jpg"
+import kittenReachingUp from "../images/kitten-reaching-up.jpg"
 
 
 export default function Home() {
@@ -82,11 +85,47 @@ export default function Home() {
             imgClasses="img img-cat-left"
             imgAlt="Cat looking left"
           />
+          <RightAlignedSection
+            title="We won’t let you down!"
+            imgUrl={catWithHeart}
+            imgAlt="Cat with a heart toy"
+            cssClasses="img center-img-sm img-mh"
+          >
+            <p>We’re friendly, experienced and professional cat sitters, that pride ourselves on our excellent customer service.</p>
+            <p>You can rely on us show up on time, everytime. We’re trustworthy and honest, and we always aim to impress.</p>
+            <p>Come rain or shine, we’ll always be there when you need us&hellip; </p>
+          </RightAlignedSection>
         </Container>
         <Testimonials 
-          title="What our customers say about us">
-
-        </Testimonials>
+          title="What our customers say about us"
+          testimonials={[
+            {
+              quote: "Fantastic service from Sam and Rachael. Very personable and reassured all of my worries about leaving my 2 furry babies with someone else for the first time...",
+              author: "Kate",
+              url: "https://www.google.com/maps/place/Warrington+Dog+Walkers/@53.3998141,-2.6615011,13z/data=!3m1!4b1!4m13!1m5!8m4!1e1!2s102856696462867624938!3m1!1e1!3m6!1s0x487b03a9956e2b25:0x49c35f3434c0f356!8m2!3d53.3997681!4d-2.6264818!9m1!1b1",
+              urlSource: "Google Reviews"
+            },
+            {
+              quote: "Efficient and professional service. Respond in a timely manner and very trustworthy.",
+              author: "Liz"
+            },                     
+            {
+              quote: "Great friendly service and they never let you down, would most definitely recommend!!! 👍",
+              author: "Mike"
+            },                     
+          ]}
+          />
+          <Contact 
+            title="Get in touch!"
+            lead="We’re available 24/7, 365 days a year"
+            email="warringtoncatsitters@gmail.com"
+            phoneNum="07914 251511"
+            facebookUrl="https://www.facebook.com/warringtondogwalkers/"
+            googleUrl="https://www.google.com/maps/place/Warrington+Dog+Walkers/@53.3997585,-2.6264759,15z/data=!4m5!3m4!1s0x0:0x49c35f3434c0f356!8m2!3d53.3997585!4d-2.6264759"
+            imgUrl={kittenReachingUp}
+            imgAlt="Cute kitten reaching up"
+            imgClasses="center-img contact-img"
+          />
       </Layout>
     </>
   )

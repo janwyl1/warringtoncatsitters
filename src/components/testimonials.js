@@ -9,7 +9,7 @@ export default function Testimonials(props) {
             <Row>
                 <Col xs={12} md={{span: 10, offset: 1}} lg={{span: 8, offset: 2}}>
                     <h2 className="text-center testimonials-header">{props.title}</h2>
-                    <Slider />
+                    <Slider testimonials={props.testimonials} />
                 </Col>
             </Row>
         </Container>

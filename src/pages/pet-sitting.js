@@ -8,7 +8,7 @@ import PriceSection from "../components/prices"
 import Testimonials from "../components/testimonials"
 import Contact from "../components/contact"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 import blackRabbit from "../images/black_rabbit.jpg"
 import hamster from "../images/hamster.jpg"
@@ -47,7 +47,7 @@ export default function Home() {
               <li>Reptiles</li>
             </ul>
             <p>
-              We’re always up for a challenge and the opportunity to expand our
+              We&lsquo;re always up for a challenge and the opportunity to expand our
               knowledge of all kinds of animals. Just let us know what you need.
             </p>
           </HeroTarget>
@@ -60,7 +60,7 @@ export default function Home() {
                 <p>Hiring a pet sitter has many benefits.</p>
                 <p>A home visit while your away can eliminate the issues associated with travel or change of routine, and remove the burden from friends and family.</p>
                 <p>We’ll take care of food, water, litter changes and veterinary needs. Ensuring your pet has as much exercise and playtime as desired.</p>
-                <p>We know how much they mean to you and we'll do whatever it takes to keep your pet happy and healthy.</p>
+                <p>We know how much they mean to you and we&lsquo;ll do whatever it takes to keep your pet happy and healthy.</p>
           </RightAlignedSection>
           <PriceSection
             title="Professional and Affordable"

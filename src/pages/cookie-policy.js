@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 
-// import Contact from "../components/contact"
 import ContactSmall from "../components/contactSmall"
 
 import { Container, Row, Col } from "react-bootstrap"

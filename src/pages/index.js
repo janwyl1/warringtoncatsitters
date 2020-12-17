@@ -7,7 +7,9 @@ import PriceSection from "../components/prices"
 import Testimonials from "../components/testimonials"
 import Contact from "../components/contact"
 
+
 import { Container } from "react-bootstrap"
+import { Helmet } from 'react-helmet';
 
 import gingerCat from "../images/ginger_cat_resting.jpg"
 import smilingCat from "../images/smiling_cat.jpg"
@@ -20,6 +22,22 @@ import kittenReachingUp from "../images/kitten-reaching-up.jpg"
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <html lang="en" />
+        <meta charSet="utf-8" />
+        <meta name="author" content="Warrington Cat Sitters" />
+        <meta name="description" content="Quality Cat Sitting Services in Warrington. 5 Star rated, DBS checked and fully insured." />
+        <title>Warrington Cat Sitters</title>
+        <link rel="canonical" href="https://warringtoncatsitters.com/" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+      </Helmet>
       <Layout>
         <Container>
           <Hero

@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-preact`,  
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-minify`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {

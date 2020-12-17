@@ -157,7 +157,6 @@ img {
 a.navbar-brand {
   font-family: $nunito;
   font-weight: 600;
-  color: green;
 }
 .menu-wrap {
   display: flex;
@@ -375,6 +374,14 @@ footer a:focus {
 .social-link:active,
 .social-link:focus {
   color: $dark-purple;
+}
+
+/* 404 Page */
+.error-code {
+  // font-style: italic;
+  // font-weight: bold;
+  color: $mid-grey;
+  opacity: 0.8
 }
 
 /* Button Styles */

@@ -1,12 +1,8 @@
 import React from "react"
 import Slider from "react-slick"
+import PropTypes from 'prop-types';
 
-/*
-I'm not sure how to combine these into 1 line?
-{testimonial.url && " - "}
-{testimonial.url && - <a href={testimonial.url}>
 
-*/
 export default function SimpleSlider(props) {
   var settings = {
     dots: true,
@@ -22,7 +18,7 @@ export default function SimpleSlider(props) {
 
   return (
     <Slider {...settings}>
-       {this.props.testimonials.map((testimonial, index) => {
+       {props.testimonials.map((testimonial, index) => {
         return (
             <div key={index}>
               <blockquote>
@@ -43,3 +39,7 @@ export default function SimpleSlider(props) {
     </Slider>
   )
 }
+
+Slider.PropTypes = {
+  testimonials: PropTypes.array
+};

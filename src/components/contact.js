@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
+import PropTypes from 'prop-types'
 
 export default function Contact(props) {
   return (
@@ -22,3 +23,15 @@ export default function Contact(props) {
         </Container>
   )
 }
+
+Contact.propTypes = {
+    title: PropTypes.string,
+    lead: PropTypes.string,
+    phoneNum: PropTypes.string,
+    email: PropTypes.string,
+    facebookUrl: PropTypes.string,
+    googleUrl: PropTypes.string,
+    imgUrl: PropTypes.string,
+    imgAlt: PropTypes.string,
+    imgClasses: PropTypes.string
+};

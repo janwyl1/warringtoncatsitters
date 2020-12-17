@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
+import PropTypes from 'prop-types';
 
 export default function Prices(props){
     return (
@@ -39,3 +40,16 @@ export default function Prices(props){
     )
 }
 
+Prices.PropTypes = {
+    title: PropTypes.string,
+    price: PropTypes.string,
+    pricePer: PropTypes.string,
+    priceDesc: PropTypes.string,
+    priceAside: PropTypes.string,
+    meetGreetTitle: PropTypes.string,
+    meetGreetText: PropTypes.string,
+    meetGreetCtaText: PropTypes.string,
+    imgUrl: PropTypes.string,
+    imgClasses: PropTypes.string,
+    imgAlt: PropTypes.string
+};

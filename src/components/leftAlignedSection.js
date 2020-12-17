@@ -1,5 +1,6 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
+import PropTypes from 'prop-types';
 
 export default function LeftAlignedSection(props){
     return (
@@ -14,3 +15,11 @@ export default function LeftAlignedSection(props){
         </Row>
     )
 }
+
+LeftAlignedSection.PropTypes = {
+    title: PropTypes.string,
+    children: PropTypes.object,
+    imgUrl: PropTypes.string,
+    imgAlt: PropTypes.string,
+    cssClasses: PropTypes.string
+};

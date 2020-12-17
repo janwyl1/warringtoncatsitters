@@ -1,5 +1,6 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
+import PropTypes from 'prop-types';
 
 export default function ContactSmall(props) {
   return (
@@ -16,3 +17,12 @@ export default function ContactSmall(props) {
 
   )
 }
+
+ContactSmall.propTypes = {
+    title: PropTypes.string,
+    lead: PropTypes.string,
+    phoneNum: PropTypes.string,
+    email: PropTypes.string,
+    facebookUrl: PropTypes.string,
+    googleUrl: PropTypes.string
+};

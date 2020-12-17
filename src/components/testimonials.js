@@ -1,6 +1,7 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import Slider from "./Slider"
+import PropTypes from 'prop-types';
 
 export default function Testimonials(props) {
   return (
@@ -16,3 +17,8 @@ export default function Testimonials(props) {
     </div>
   )
 }
+
+Testimonials.PropTypes = {
+  title: PropTypes.string,
+  testimonials: PropTypes.array
+};

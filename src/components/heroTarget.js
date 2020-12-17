@@ -1,5 +1,6 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
+import PropTypes from 'prop-types'
 
 export default function HeroTarget(props) {
   return (
@@ -20,3 +21,11 @@ export default function HeroTarget(props) {
     </Row>
   )
 }
+
+HeroTarget.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.object,
+  imgUrl: PropTypes.string,
+  imgAlt: PropTypes.string,
+  cssClasses: PropTypes.string
+};

@@ -1,5 +1,6 @@
 import React from "react"
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export default function Hero({title, tagline, ctaText, heroImg, heroAlt}) {
     return (
@@ -17,3 +18,11 @@ export default function Hero({title, tagline, ctaText, heroImg, heroAlt}) {
         </Row>
     )
 }
+
+Hero.propTypes = {
+    title: PropTypes.string,
+    tagline: PropTypes.string,
+    ctaText: PropTypes.string,
+    heroImg: PropTypes.string,
+    heroAlt: PropTypes.string,
+};

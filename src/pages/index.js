@@ -7,7 +7,7 @@ import PriceSection from "../components/prices"
 import Testimonials from "../components/testimonials"
 import Contact from "../components/contact"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 import gingerCat from "../images/ginger_cat_resting.jpg"
 import smilingCat from "../images/smiling_cat.jpg"
@@ -45,7 +45,7 @@ export default function Home() {
               comfort of their own home.
             </p>
             <p>
-              You can relax while you're away, knowing that your home is secure
+              You can relax while you&lsquo;re away, knowing that your home is secure
               and your furry friend is well looked after. Purrfect!
             </p>
           </HeroTarget>

@@ -24,7 +24,7 @@ export default function HeroTarget(props) {
 
 HeroTarget.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.object,
+  children: PropTypes.array,
   imgUrl: PropTypes.string,
   imgAlt: PropTypes.string,
   cssClasses: PropTypes.string

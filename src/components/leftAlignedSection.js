@@ -17,9 +17,9 @@ export default function LeftAlignedSection(props){
 }
 
 LeftAlignedSection.propTypes = {
-    title: PropTypes.string.isRequired,
-    children: PropTypes.object.isRequired,
-    imgUrl: PropTypes.string.isRequired,
-    imgAlt: PropTypes.string.isRequired,
-    cssClasses: PropTypes.string.isRequired
+    title: PropTypes.string,
+    children: PropTypes.array,
+    imgUrl: PropTypes.string,
+    imgAlt: PropTypes.string,
+    cssClasses: PropTypes.string
 };

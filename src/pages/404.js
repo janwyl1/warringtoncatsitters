@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 import {Link} from "gatsby"
 
 import ContactSmall from "../components/contactSmall"
-// import Hero from "../components/hero"
-// import LeftAlignedSection from "../components/leftAlignedSection"
 
 import { Container, Row, Col} from "react-bootstrap"
 
@@ -17,25 +15,6 @@ export default function Home() {
     <>
       <Layout>
         <Container>
-        {/* <Hero
-            title="Page not found!"
-            tagline="Our expert team is on the case"
-            ctaText="View homepage"
-            heroImg={cat404}
-            heroAlt="Cat playing with computer cables"
-          />
-
-
-        <LeftAlignedSection
-            title="Links"
-          >
-            <p>You may be looking for:</p>
-            <ul>
-                <li><a href="/">Cat Sitting</a></li>
-                <li><a href="/pet-sitting">Pet Sitting</a></li>
-            </ul>
-          </LeftAlignedSection> */}
-
             <Row className="mb-2">
                 <Col xs={12} lg={{span: 10, offset: 1}} className="text-center">
                     <h1>Something went wrong!</h1>

@@ -14,6 +14,8 @@ export default function Footer() {
                     <p className="footer-small">Designed by <a href="https://github.com/janwyl1">James Anwyl</a></p> 
                 </Col>
             </Row>
+        </Container>
+        <Container fluid>
             <Row>
                 <Col xs={12} md={{span:6, offset: 6}}>
                     <ul className="policies">

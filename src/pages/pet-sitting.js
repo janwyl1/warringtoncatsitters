@@ -26,7 +26,7 @@ export default function Home() {
         <Container>
           <Hero
             title="Pet Sitting in Warrington"
-            tagline="Quality care for all your household pets&hellip;"
+            tagline="Quality care for all your household pets"
             ctaText="Find out more"
             heroImg={blackRabbit}
             heroAlt="Black Rabbit with big floppy ears"

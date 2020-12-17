@@ -15,6 +15,6 @@ export default function Layout ({children}){
     )
 }
 
-Layout.PropTypes = {
+Layout.propTypes = {
     children: PropTypes.object
   };

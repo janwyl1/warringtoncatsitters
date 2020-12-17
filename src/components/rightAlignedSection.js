@@ -16,7 +16,7 @@ export default function RightAlignedSection(props){
     )
 }
 
-RightAlignedSection.PropTypes = {
+RightAlignedSection.propTypes = {
     title: PropTypes.string,
     children: PropTypes.object,
     imgUrl: PropTypes.string,

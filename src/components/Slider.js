@@ -40,6 +40,6 @@ export default function SimpleSlider(props) {
   )
 }
 
-Slider.PropTypes = {
+Slider.propTypes = {
   testimonials: PropTypes.array
 };

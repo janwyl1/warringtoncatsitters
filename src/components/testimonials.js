@@ -18,7 +18,7 @@ export default function Testimonials(props) {
   )
 }
 
-Testimonials.PropTypes = {
+Testimonials.propTypes = {
   title: PropTypes.string,
   testimonials: PropTypes.array
 };

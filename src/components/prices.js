@@ -40,7 +40,7 @@ export default function Prices(props){
     )
 }
 
-Prices.PropTypes = {
+Prices.propTypes = {
     title: PropTypes.string,
     price: PropTypes.string,
     pricePer: PropTypes.string,
